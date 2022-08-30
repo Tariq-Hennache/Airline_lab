@@ -6,5 +6,6 @@ public class Airline {
 
     public Airline(){
         this.flights = new ArrayList<>();
+
     }
 }

@@ -10,5 +10,6 @@ public class Flight {
         this.destination = destination;
         this.id = id;
         this.passengers = new ArrayList<>();
+
     }
 }
