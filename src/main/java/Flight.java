@@ -12,4 +12,10 @@ public class Flight {
         this.passengers = new ArrayList<>();
 
     }
+
+    public void addPassenger(Passenger passenger){
+        passengers.add(passenger);
+    }
+
+
 }
