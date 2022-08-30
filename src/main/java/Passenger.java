@@ -9,4 +9,8 @@ public class Passenger {
         this.contactNumber = contactNumber;
         this.id = id;
     }
+
+    public String getName() {
+        return name;
+    }
 }

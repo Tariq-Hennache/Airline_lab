@@ -27,4 +27,11 @@ public class FlightTest {
         assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void canBookSeat(){
+        String expected = "John has been assigned seat 12A";
+        String actual = flight.bookSeat(passenger, "12A");
+        assertEquals(expected, actual);
+    }
 }

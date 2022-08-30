@@ -26,5 +26,9 @@ public class Flight {
         passengers.add(passenger);
     }
 
+    public String bookSeat(Passenger passenger, String seat){
+        return String.format("%s has been assigned seat %s", passenger.getName(), seat);
+    }
+
 
 }
