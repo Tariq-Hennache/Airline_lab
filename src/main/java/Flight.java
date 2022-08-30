@@ -13,6 +13,15 @@ public class Flight {
 
     }
 
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public void setPassengers(ArrayList<Passenger> passengers) {
+        this.passengers = passengers;
+    }
+
+
     public void addPassenger(Passenger passenger){
         passengers.add(passenger);
     }
