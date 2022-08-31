@@ -17,9 +17,11 @@ public class Airline {
         flights.remove(flight);
     }
 
-    public void getFlights() {
-        for (int i = 0; i < flights.size(); i++) {
-            System.out.println(flights.get(i));
-        }
+    public ArrayList<Flight> getFlights() {
+//        for (int i = 0; i < flights.size(); i++) {
+//            System.out.println(flights.get(i));
+//        }
+        return flights;
+
     }
 }
