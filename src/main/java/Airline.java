@@ -7,9 +7,9 @@ public class Airline {
     public Airline(){
         this.flights = new ArrayList<>();
     }
+    public void add(Flight flight){
+        flights.add(flight);
 
-    public ArrayList<Flight> displayFlight(){
-        return (flights);
     }
 
     public ArrayList<Flight> getFlights() {

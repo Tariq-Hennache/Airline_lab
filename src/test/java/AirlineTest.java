@@ -3,6 +3,8 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -12,25 +14,25 @@ public class AirlineTest {
     private Flight flight1;
     private Flight flight2;
     private Flight flight3;
-    private ArrayList<Flight> flights;
+
 
     @BeforeEach
     public void setUp(){
         //Adding flights to ArrayList
-        flights = new ArrayList<Flight>();
+        airline = new Airline();
         flight1 = new Flight("Paris", 1);
         flight2 = new Flight("Gatwick", 2);
         flight3 = new Flight("Malaga", 3);
-        flights.add(flight1);
-        flights.add(flight2);
-        flights.add(flight3);
+        airline.add(flight1);
+        airline.add(flight2);
+        airline.add(flight3);
     }
 
     @Test
-    public void canDisplayFlight(){
+    public void canGetFlight(){
         // checking that method prints ArrayList of flights
-        ArrayList expected = new ArrayList<>();
-        ArrayList actual = airline.displayFlight();
+        List<Flight> expected = Arrays.asList(flight1, flight2, flight3);
+        List<Flight> actual = airline.getFlights();
         assertEquals(expected, actual);
     }
 
