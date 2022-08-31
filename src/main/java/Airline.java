@@ -12,6 +12,10 @@ public class Airline {
 
     }
 
+    public void remove(Flight flight){
+        flights.remove(flight);
+    }
+
     public ArrayList<Flight> getFlights() {
         return flights;
     }
