@@ -26,12 +26,12 @@ public class Main {
             System.out.println("4) Add passenger");
             System.out.println("5) Book seat");
             System.out.println("6) End session");
-            
+
             int functionality = reader.nextInt();
             reader.nextLine();
 
             if (functionality == 1) {
-                System.out.println(airline.getFlights());
+                airline.getFlights();
             } else if (functionality == 2) {
                 System.out.println("Destination");
                 String destination = reader.nextLine();
@@ -43,7 +43,7 @@ public class Main {
             } else if (functionality == 3) {
                 //airline.remove();
                 System.out.println("Which flight would you like to cancel?");
-                System.out.println(airline.getFlights());
+                airline.getFlights();
                 String cancelledFlight = reader.nextLine();
 
             } else if (functionality == 4) {
@@ -55,6 +55,7 @@ public class Main {
                 int id = reader.nextInt();
                 Passenger passenger = new Passenger(name, number, id);
                 flight.addPassenger(passenger);
+                System.out.println(name + "has been added to flight");
             } else if (functionality == 5) {
                 //System.out.println(Flight.bookSeat());
             } else if (functionality == 6) {

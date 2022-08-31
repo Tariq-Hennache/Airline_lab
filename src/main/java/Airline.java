@@ -4,19 +4,22 @@ public class Airline {
 
     private ArrayList<Flight> flights;
 
-    public Airline(){
+    public Airline() {
         this.flights = new ArrayList<>();
     }
-    public void add(Flight flight){
+
+    public void add(Flight flight) {
         flights.add(flight);
 
     }
 
-    public void remove(Flight flight){
+    public void remove(Flight flight) {
         flights.remove(flight);
     }
 
-    public ArrayList<Flight> getFlights() {
-        return flights;
+    public void getFlights() {
+        for (int i = 0; i < flights.size(); i++) {
+            System.out.println(flights.get(i));
+        }
     }
 }
